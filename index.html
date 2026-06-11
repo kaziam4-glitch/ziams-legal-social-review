@@ -1,89 +1,264 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ziam's Legal & Social Review</title>
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            margin:0;
-            padding:0;
-            background:#f4f4f4;
-        }
-        header{
-            background:#1f3a5f;
-            color:white;
-            text-align:center;
-            padding:30px;
-        }
-        nav{
-            background:#2c4c74;
-            padding:10px;
-            text-align:center;
-        }
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:0 15px;
-        }
-        .container{
-            width:80%;
-            margin:auto;
-            padding:20px;
-        }
-        .article{
-            background:white;
-            padding:20px;
-            margin-bottom:20px;
-            border-radius:8px;
-            box-shadow:0 2px 5px rgba(0,0,0,0.1);
-        }
-        footer{
-            background:#1f3a5f;
-            color:white;
-            text-align:center;
-            padding:15px;
-            margin-top:20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ziam's Legal & Social Review</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f4f6f9;
+color:#333;
+line-height:1.8;
+}
+
+header{
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f');
+background-size:cover;
+background-position:center;
+height:70vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:700px;
+margin:auto;
+}
+
+nav{
+background:#0f172a;
+padding:15px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+flex-wrap:wrap;
+}
+
+nav ul li{
+margin:0 15px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:#facc15;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:40px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:30px;
+color:#0f172a;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#0f172a;
+}
+
+.about{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.author{
+text-align:center;
+}
+
+.author img{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:50px;
+}
+
+.btn{
+display:inline-block;
+background:#16a34a;
+color:white;
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+margin-top:15px;
+}
+
+.btn:hover{
+background:#15803d;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:2rem;
+}
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Ziam's Legal & Social Review</h1>
-    <p>Artikel dan Kajian Hukum, Agama, dan Sosial</p>
+<div class="hero">
+<h1>Ziam's Legal & Social Review</h1>
+<p>
+Kajian Hukum, Agama, dan Sosial untuk Membangun Masyarakat yang Berkeadilan dan Berkeadaban.
+</p>
+</div>
 </header>
 
 <nav>
-    <a href="#">Beranda</a>
-    <a href="#">Artikel</a>
-    <a href="#">Tentang</a>
-    <a href="#">Kontak</a>
+<ul>
+<li><a href="#beranda">Beranda</a></li>
+<li><a href="#artikel">Artikel</a></li>
+<li><a href="#tentang">Tentang</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
 </nav>
 
-<div class="container">
+<section class="container" id="artikel">
 
-    <div class="article">
-        <h2>Selamat Datang</h2>
-        <p>
-            Website ini memuat artikel, opini, dan kajian mengenai hukum,
-            agama, serta isu-isu sosial yang berkembang di masyarakat.
-        </p>
-    </div>
+<h2 class="section-title">Artikel Terbaru</h2>
 
-    <div class="article">
-        <h2>Artikel Pertama</h2>
-        <p>
-            Tuliskan artikel Anda di sini. Artikel dapat membahas hukum keluarga,
-            hukum Islam, perlindungan data pribadi, maupun isu sosial kontemporer.
-        </p>
-    </div>
+<div class="cards">
+
+<div class="card">
+<h3>Perlindungan Data Pribadi dalam Perspektif Maqashid Syariah</h3>
+<p>
+Kajian mengenai urgensi perlindungan data pribadi sebagai bagian dari hifz al-'irdh dan hifz al-mal dalam hukum Islam kontemporer.
+</p>
+</div>
+
+<div class="card">
+<h3>Pencegahan Pelanggaran Administrasi Nikah</h3>
+<p>
+Analisis peran penyuluh agama dan aparat penegak hukum dalam membangun kesadaran hukum masyarakat.
+</p>
+</div>
+
+<div class="card">
+<h3>Transformasi Sosial dan Tantangan Hukum Digital</h3>
+<p>
+Perkembangan teknologi digital menuntut pembaruan regulasi yang adaptif dan berkeadilan.
+</p>
+</div>
 
 </div>
 
+</section>
+
+<section class="container" id="tentang">
+
+<div class="about">
+
+<h2 class="section-title">Tentang Penulis</h2>
+
+<div class="author">
+
+<h3>Kang Ziam</h3>
+
+<p>
+Peneliti dan penulis yang fokus pada kajian hukum, agama, dan sosial. Website ini menjadi ruang publikasi gagasan, hasil penelitian, serta refleksi akademik yang bertujuan memberikan kontribusi bagi pengembangan ilmu pengetahuan dan kehidupan masyarakat.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="container" id="kontak">
+
+<h2 class="section-title">Kontak</h2>
+
+<div class="about" style="text-align:center;">
+
+<p>
+Untuk kerja sama penulisan, diskusi akademik, seminar, maupun konsultasi ilmiah.
+</p>
+
+<a class="btn" href="#">
+Hubungi Saya
+</a>
+
+</div>
+
+</section>
+
 <footer>
-    <p>&copy; 2026 Ziam's Legal & Social Review. All Rights Reserved.</p>
+
+<h3>Ziam's Legal & Social Review</h3>
+
+<p>
+Hukum • Agama • Sosial
+</p>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
 </footer>
 
 </body>
